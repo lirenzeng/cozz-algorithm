@@ -1,5 +1,9 @@
 package com.jianzhi.offer;
 
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.concurrent.Semaphore;
+
 public class SingletonBuildFactory {
 
     /**
@@ -99,7 +103,6 @@ public class SingletonBuildFactory {
         private Singleton6() {
 
         }
-
         public static Singleton6 getInstance() {
             if (instance == null) {
                 synchronized (Singleton6.class) {
