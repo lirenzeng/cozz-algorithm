@@ -6,4 +6,17 @@ public class LinkNode {
 
     public int value;
 
+    public LinkNode() {
+
+    }
+
+    public LinkNode(int value) {
+        this.next = null;
+        this.value = value;
+    }
+    public LinkNode(LinkNode next, int value) {
+        this.next = next;
+        this.value = value;
+    }
+
 }
